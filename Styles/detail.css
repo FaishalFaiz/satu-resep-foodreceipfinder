@@ -32,6 +32,8 @@ main {
     max-width: 1000px;
 }
 
+
+
 @media (max-width: 768px) {
     #menu-image {
         max-width: 100%;
