@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.text-orange {
+    color: rgb(221, 127, 5);
+}
+
+.gradient {
+    background: linear-gradient(90deg, orange, orangeRed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vh-80 {
+    min-height: 80vh;
+}
+
+.recipe-img {
+    height: 180px;
+
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card {
+    padding: 0px;
+    max-width: 15%;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    duration: 1s;
+}

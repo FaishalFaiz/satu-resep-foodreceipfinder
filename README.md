@@ -1,0 +1,1 @@
+Webstite project for IDN's IT practical exam (uprak). A simple food receip finder made with vanilla code and TheMealDB API
