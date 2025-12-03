@@ -13,3 +13,35 @@ body {
 main {
     flex: 1;
 }
+
+.text-orange {
+    color: rgb(221, 127, 5);
+}
+
+/* Content */
+
+#menu-image {
+    max-width: 300px;
+}
+
+#menu-instruction {
+    max-width: 1000px;
+}
+
+#iframe-container {
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+    #menu-image {
+        max-width: 100%;
+    }
+
+    #menu-instruction {
+        padding-inline: 20px;
+    }
+
+    #iframe-container {
+        margin-inline: 20px;
+    }
+}

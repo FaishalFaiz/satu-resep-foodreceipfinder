@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satu Resep - Food Receip Finder</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="icon" type="image/png" href="assets/webicon.svg" />
+    <link rel="icon" type="image/png" href="../Assets/webicon.svg" />
     <link rel="stylesheet" href="../Styles/detail.css" />
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container navbar-light bg- mt-3 ">
-            <a class="navbar-brand text-orange text-wrap text-center" href="#">Satu Resep - Food Receip Finder</a>
+            <a class="navbar-brand text-orange text-wrap text-center" href="index.html">Satu Resep - Food Receip
+                Finder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,8 +35,37 @@
         </div>
     </nav>
 
-    <main>
+    <main class="d-flex flex-column mt-5 align-items-center">
+        <div class="w-50 d-flex justify-content-center p-3">
+            <img src="https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" alt="Menu Image"
+                id="menu-image" class="w-100 img-thumbnail" />
+        </div>
+        <h2 class="display-5 fw-semibold mt-5" id="menu-title">
+            <!-- judul -->
+        </h2>
+        <p class="lead" id="menu-category">
+            <!-- kategori -->
+        </p>
 
+        <div class="w-100 my-5 d-flex flex-column align-items-center">
+            <h3 class="display-7 fw-semibold">Ingredient</h3>
+            <ol id="menu-ingredient-list" class="list-group list-group-numbered w-50 mt-3">
+                <!-- list bahan2 -->
+            </ol>
+
+            <h3 class="display-7 fw-semibold mt-5">Recipe Instruction</h3>
+            <p id="menu-instruction" class="w-100 text-center">
+                <!-- teks instruksi -->
+            </p>
+
+            <div id="iframe-container" class="ratio ratio-16x9 w-100 mt-5 ">
+                <iframe id="menu-yt" src="" title="YouTube video"
+                    allowfullscreen loading="lazy" class="rounded-3"></iframe>
+            </div>
+
+            <p class="mt-5 fw-semibold">Source</p>
+            <a id="menu-source" href="https://www.bbcgoodfood.com/recipes/2907669/easy-pancakes" target="_blank" class="px-5">https://www.bbcgoodfood.com/recipes/2907669/easy-pancakes</a>
+        </div>
     </main>
 
     <footer class="container-fluid bg-dark">
@@ -49,4 +81,5 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../JavaScript/detail.js"></script>
 </body>
+
 </html>

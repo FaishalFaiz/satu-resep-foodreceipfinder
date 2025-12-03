@@ -53,13 +53,18 @@ async function fetchData(input) {
             cardBody.append(cardTitle);
             card.append(cardImage, cardBody);
 
+            card.addEventListener("click", () => {
+                window.location.href = `detail.html?id=${recipe.idMeal}`;
+            });
+
             ListRecipe.append(card);
 
             StatusText.innerText = `Menampilkan resep "${InputValue}"`;
 
         });
     } catch (error) {
-        ListRecipe.innerHTML = "<p class='text-center'>Terjadi Kesalahan Server</p>";
+        ListRecipe.innerHTML = "";
+        StatusText.innerText = "Terjadi Kesalahan Server :( ";
         console.error("Error fetching data:", error);
     }
 }
